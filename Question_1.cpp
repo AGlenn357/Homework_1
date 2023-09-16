@@ -3,6 +3,7 @@ Andrew Glenn
 AERSP 424
 Homework 1
 Question 1: Determining the roll rate of an aircraft
+Trying to figure out Git Hub commit messages
 */
 
 #include <iostream> //include input output library
