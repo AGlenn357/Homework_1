@@ -13,7 +13,7 @@ using namespace std; //using standard library
 int main() {
     float Lp = 0.33; //Lp value of plane
     float Ldelta = -0.75; //Ldelta value of plane
+    double P; //roll rate
     
     return 0;
 }
-
