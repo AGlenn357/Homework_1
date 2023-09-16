@@ -11,5 +11,9 @@ Question 1: Determining the roll rate of an aircraft
 using namespace std; //using standard library
 
 int main() {
+    float Lp = 0.33; //Lp value of plane
+    float Ldelta = -0.75; //Ldelta value of plane
+    
     return 0;
 }
+
