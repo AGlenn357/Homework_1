@@ -14,9 +14,9 @@ using namespace std; //using standard library
 int main() {
     float Lp = 0.33; //Lp value of plane
     float Ldelta = -0.75; //Ldelta value of plane
-    double P = 1; //roll rate (initial value 1)
+    double Pt1; //roll rate at time t+1
     int delta; //elevator deflection value
-    double P0 = 1; //initial rolling rate
+    double Pt = 1; //roll rate at time t
     double P_dot; //time derivative of roll rate
     double time; //time variable
     
@@ -28,12 +28,11 @@ int main() {
         else {
             delta = 0; //ailerion delfection value when t > 2 s
         }
-        P_dot = Lp*P+Ldelta*delta; //finding roll rate derivative value
-        P = P0+P_dot*0.01; //new roll value at time t+1
-        P0 = P; //setting initial roll rate to current roll rate (for next iteration)
+        P_dot = Lp*Pt+Ldelta*delta; //finding roll rate derivative value
+        Pt1 = Pt+P_dot*0.01; //new roll value at time t+1
+        Pt = Pt1; //setting initial roll rate to current roll rate (for next iteration)
         time = i*0.01; //time of specific iteration
-        cout << "Time: " << fixed << setprecision(2) << time << " s Roll Rate: " << P << endl; //outputting time and roll rate
+        cout << "Time: " << fixed << setprecision(2) << time << " s Roll Rate: " << Pt1 << endl; //outputting time and roll rate
     }
     return 0;
 }
-
