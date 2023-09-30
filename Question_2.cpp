@@ -15,11 +15,11 @@ int main() {
     float Lp = 0.33; //Lp value of plane
     float Ldelta = -0.75; //Ldelta value of plane
     double Pt1; //roll rate at time t+1
-    int delta; //aileron deflection value
+    double delta; //aileron deflection value
     double Pt = 1; //roll rate at time t
     double P_dot; //time derivative of roll rate
     double time; //time variable
-    double K = -2.84; //gain value in controller
+    double K = -1.27; //gain value in controller
     
     
     for (int i = 1; i <= 500; i++) { //loop from t = 0 to t = 5
