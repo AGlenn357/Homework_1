@@ -10,7 +10,7 @@ Question 5: finding the Sigmoid and Sigmoid gradient
 
 using namespace std; //using stadard library
 
-double sigmoid(double z) { //function to Sigmoid
+double sigmoid(double z) { //function for Sigmoid
     double result = 1/(1+exp(-z)); //finding Sigmoid
     return result; //returning Sigmoid value
 }
