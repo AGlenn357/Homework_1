@@ -7,6 +7,7 @@ Question 8: training the artificial neural network to classify airplanes
 #include <iostream> //include input ourput library
 #include <math.h> //include math library
 #include <vector> //include vector library
+#include <string> //inlcude string library
 
 using namespace std; //using standard library
 
