@@ -4,7 +4,6 @@ Homework 1
 Question 6: creating a gradient cost function
 */
 
-#include <vector> //include vector library
 #include <iostream> //include input ourput library
 #include <iomanip> //include input output manipulation library
 #include <math.h> //including math library
