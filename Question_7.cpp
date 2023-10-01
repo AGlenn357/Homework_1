@@ -39,7 +39,7 @@ vector<double> gradient_weights(vector<double> w, vector<double> x, double y) { 
     return dwi; //returning gradient weight vector
 }
     
-vector<double> update_weights(vector<double> w, vector<double> dw, double alpha) {
+vector<double> update_weights(vector<double> w, vector<double> dw, double alpha) { //function to update weights
     for (int i = 0; i < w.size(); i++) { //for each value in weights
         w[i] = w[i] - alpha*dw[i]; //new weight value
     }
